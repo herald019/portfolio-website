@@ -2,40 +2,39 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white px-6 py-20"
+      className="min-h-screen bg-gradient-to-b from-[#1a1a1a] to-[#0f0f0f] text-white flex items-center justify-center px-8 py-16"
     >
-      {/* Decorative Background Glow */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900 to-gray-900 pointer-events-none"></div>
+      <div className="max-w-4xl w-full space-y-8">
+        
+        {/* Heading */}
+        <h2 className="text-4xl sm:text-5xl font-bold drop-shadow-lg">
+          About{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-400">
+            Me
+          </span>
+        </h2>
 
-      {/* Heading */}
-      <h2 className="text-4xl sm:text-5xl font-bold mb-4 relative z-10">
-        About <span className="text-green-400">Me</span>
-      </h2>
+        {/* Body Text */}
+        <div className="space-y-6">
+          <p className="text-lg text-gray-300 leading-relaxed">
+            I’m a passionate{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">
+              AI/ML Engineer
+            </span>{" "}
+            who thrives on solving complex challenges through creative, data-driven
+            solutions. My approach blends technical precision with an eye for design,
+            ensuring every project is both functional and visually engaging.
+          </p>
 
-      {/* Accent line */}
-      <div className="w-16 h-1 bg-green-400 rounded-full mb-8 relative z-10"></div>
+          <p className="text-lg text-gray-300 leading-relaxed">
+            Outside of coding, I enjoy exploring emerging tech trends, contributing
+            to open-source projects, and experimenting with AI-powered art tools.
+          </p>
+        </div>
 
-      {/* Paragraph */}
-      <div className="max-w-3xl text-center relative z-10 space-y-6">
-        <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
-          I’m <span className="font-semibold text-white">Harry Herald</span>, an AI/ML engineer
-          passionate about crafting intelligent, scalable, and impactful solutions.
-          My mission is to merge cutting-edge technology with practical, real-world
-          applications — making complex systems both accessible and transformative.
-        </p>
+        {/* Divider for minimalist flair */}
+        <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-teal-400 rounded-full"></div>
 
-        <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
-          From predictive modeling to building interactive applications and
-          optimizing algorithms, I thrive where <span className="text-green-400 font-medium">
-          innovation meets problem-solving
-          </span>. I’m constantly exploring new technologies, driven by the belief that
-          thoughtful engineering can shape a better future.
-        </p>
-      </div>
-
-      {/* Subtle Scroll Indicator */}
-      <div className="absolute bottom-6 animate-bounce text-gray-500">
-        ↓
       </div>
     </section>
   );

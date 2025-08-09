@@ -26,48 +26,61 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white px-6 py-20"
+      className="relative flex flex-col items-center justify-center min-h-screen 
+                 bg-gradient-to-b from-[#1a1a1a] to-[#0f0f0f] text-white px-6 py-20"
     >
+      {/* Heading */}
       <h2 className="text-4xl sm:text-5xl font-bold mb-10 text-center">
-        Contact <span className="text-green-400">Me</span>
+        Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">Me</span>
       </h2>
 
+      {/* Contact Form */}
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-lg bg-gray-800/80 backdrop-blur-md p-8 rounded-xl shadow-2xl space-y-4 border border-gray-700"
+        className="w-full max-w-lg px-0 py-0 transition-all duration-300"
       >
+  
+
         <input
           type="text"
           name="name"
           placeholder="Your Name"
           required
-          className="w-full px-4 py-3 rounded-lg bg-gray-700/80 text-white outline-none focus:ring-2 focus:ring-green-400 focus:bg-gray-700 transition"
+          className="w-full px-4 py-3 mb-4 rounded-lg bg-[#1a1a1a]/70 text-white outline-none 
+                     border border-gray-800 focus:ring-2 focus:ring-teal-400 
+                     focus:bg-[#1a1a1a] transition"
         />
         <input
           type="email"
           name="email"
           placeholder="Your Email"
           required
-          className="w-full px-4 py-3 rounded-lg bg-gray-700/80 text-white outline-none focus:ring-2 focus:ring-green-400 focus:bg-gray-700 transition"
+          className="w-full px-4 py-3 mb-4 rounded-lg bg-[#1a1a1a]/70 text-white outline-none 
+                     border border-gray-800 focus:ring-2 focus:ring-teal-400 
+                     focus:bg-[#1a1a1a] transition"
         />
         <textarea
           name="message"
           placeholder="Your Message"
           required
-          className="w-full px-4 py-3 rounded-lg bg-gray-700/80 text-white outline-none focus:ring-2 focus:ring-green-400 focus:bg-gray-700 transition"
           rows="5"
+          className="w-full px-4 py-3 mb-4 rounded-lg bg-[#1a1a1a]/70 text-white outline-none 
+                     border border-gray-800 focus:ring-2 focus:ring-teal-400 
+                     focus:bg-[#1a1a1a] transition"
         ></textarea>
+
+        {/* Submit Button */}
         <button
           type="submit"
-          className="w-full bg-green-400 text-black px-4 py-3 rounded-lg font-bold hover:bg-green-500 hover:scale-[1.02] transition-transform"
+          className="w-full bg-gradient-to-r from-teal-400 to-cyan-400 text-black px-4 py-3 rounded-lg font-bold 
+                     hover:bg-teal-300 hover:scale-[1.02] transition-transform"
         >
           Send Message
         </button>
 
+        {/* Status Message */}
         {status && (
-          <p className="mt-4 text-center text-green-400 animate-fadeIn">
-            {status}
-          </p>
+          <p className="mt-4 text-center text-teal-400 animate-fadeIn">{status}</p>
         )}
       </form>
     </section>

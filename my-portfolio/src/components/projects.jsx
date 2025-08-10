@@ -41,7 +41,7 @@ export default function Projects() {
     >
       {/* Heading */}
       <h2 className="text-4xl sm:text-5xl font-bold mb-10">
-        My <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">Projects</span>
+        My <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">Projects</span>
       </h2>
 
       {/* Projects Grid */}

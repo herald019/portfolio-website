@@ -9,7 +9,7 @@ export default function About() {
         {/* Heading */}
         <h2 className="text-4xl sm:text-5xl font-bold drop-shadow-lg">
           About{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-400">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
             Me
           </span>
         </h2>
@@ -18,7 +18,7 @@ export default function About() {
         <div className="space-y-6">
           <p className="text-lg text-gray-300 leading-relaxed">
             I’m a passionate{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
               AI/ML Engineer
             </span>{" "}
             who thrives on solving complex challenges through creative, data-driven
@@ -33,7 +33,7 @@ export default function About() {
         </div>
 
         {/* Divider for minimalist flair */}
-        <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-teal-400 rounded-full"></div>
+        <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-cyan-400 rounded-full"></div>
 
       </div>
     </section>

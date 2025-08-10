@@ -50,7 +50,7 @@ export default function Projects() {
           <div
             key={index}
             className="bg-[#111] rounded-xl p-6 shadow-lg transition-all duration-300 
-                       hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(45,212,191,0.5)] cursor-pointer"
+                       hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] cursor-pointer"
           >
             {/* Project Title */}
             <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
